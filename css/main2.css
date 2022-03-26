@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  margin: 0;
+}
+.parallax-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.background {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+}
+.background--spring {
+  background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	filter: grayscale(100%);
+}
+.background--summer {
+  background-image: url('https://images.unsplash.com/photo-1509576931792-214960705f8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80');
+}
+.background--fall {
+  background-image: url('https://images.unsplash.com/photo-1521478706270-f2e33c203d95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+.background--winter {
+  background-image: url('https://images.unsplash.com/photo-1510192111633-a6807b90a8f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1037&q=80');
+
+}
+.title {
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 50px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  height: 100px;
+  color: white;
+  font-size: 5rem;
+  background: rgba(0,0,0,0.4);
+}
+
+.season-desc {
+  z-index: 1;
+  position: relative;
+ /* background: #282E34;
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 2em;*/
+  padding: 3rem;
+  height: 100vh;
+  margin: 0;
+  /*display: flex;*/
+background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+
+.desc-wrapper {
+    margin: auto;
+    box-sizing: border-box;
+  }
+.season--title {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+.season--about {
+    margin-top: 50px;
+    padding: 0;
+  }
+}
+@media (max-width: 998px) and (orientation: portrait) {
+  .season-desc {
+    padding: 1.5rem 20px;
+    font-size: 1rem;
+    height: unset;
+    min-height: 100vh;
+    .season-title {
+      font-size: 2.5rem;
+      margin: 20px 0;
+      letter-spacing: unset;
+     }
+    .season-about {
+      margin-top: 20px;
+     }
+   }
+ }
+
+
+/* =============================
+
+    GENERAL STYLES
+
+=============================*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+.contact-transform{
+	
+	width: 30%;
+	/*background-color: white;*/
+}
+
+h1, 
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* =============================
+
+    HEADER STYLES
+
+=============================*/
+
+.cover {
+/*  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;*/
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .cover {
+ /*   background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;*/
+  }
+
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+.hero-text img {
+	filter: sepia(50%);
+	opacity: 0.7;
+}
+
+.hero-text h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+}
+
+@media (min-width: 768px) {
+
+  .hero-text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 7rem;
+  }
+
+}
+
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/* =============================
+
+      LOCATIONS STYLES
+
+=============================*/
+
+.blurb img {
+  height: 7.5rem;
+}
+
+.blurb h3 {
+  font-weight: 700;
+}
+
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+
+
+.blurb::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+@media (min-width: 768px) {
+
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .blurb::after {
+    display: none;
+  }
+
+}
+
+/* =============================
+
+        PROGRAM STYLES
+
+=============================*/
+
+.program {
+  width: 100%;
+  text-align: left;
+/*  background: hsla(100,0%,0%,.6);*/
+ color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.program p {
+  font-style: italic; 
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}
+
+/* =============================
+
+        GIFTS STYLES
+
+=============================*/
+
+.gifts img {
+  height: 7.5rem;
+}
+
+.gifts p:last-child {   /* To even out the bottom and top margins of this section. */
+  margin-bottom: 0;
+}
+
+
+/* =============================
+
+        FAQ STYLES
+
+=============================*/
+
+.faq {
+ /* background: hsla(100,0%,0%,.6);*/
+  color: #d2ba87;
+ filter: drop-shadow(13px 13px 10px gray);
+  width: 100%;
+  text-align: center;
+}
+
+.faq h2 {
+  margin-top: 1rem;
+}
+
+.faq p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+/* =============================
+
+        FOOTER STYLES
+
+=============================*/
+.foot_R{
+	height: 10vh;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+ /* background-color: #606060;*/
+  color: #000;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
